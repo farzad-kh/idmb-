@@ -821,10 +821,10 @@ right: auto;
   }
 
   .content-holder ul li {
-    font-size: .9rem;
+    font-size: .85rem !important;
     margin: 0 !important;
   }
-
+ 
   .content-holder {
     margin: 3px 0;
   }
