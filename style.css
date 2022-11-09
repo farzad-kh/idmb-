@@ -821,12 +821,11 @@ right: auto;
   }
 
   .content-holder ul li {
-    font-size: .6rem !important;
+    font-size: .75rem !important;
     margin: 0 !important;
-  }
-  .content-holder ul li{
     padding: 5px 8px !important;
   }
+  
   .content-holder {
     margin: 3px 0;
   }
