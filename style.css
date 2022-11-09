@@ -666,13 +666,13 @@ footer {
 }
 
 .footer-content-conteiner .content-holder:first-child li {
-  padding: .6rem .65rem;
+  padding: .6rem .65rem !important;
   border-radius: 50%
 }
 
 .footer-content-conteiner .content-holder:first-child li:hover {
   background: rgb(31, 31, 31);
-  ;
+
 }
 
 .tmdb-logo {
