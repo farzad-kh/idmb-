@@ -3,14 +3,14 @@ body {
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
-  scroll-behavior: smooth;
+  
 
-  -webkit-scroll-behavior: smooth
+ 
 }
 
 html {
   scroll-behavior: smooth;
-
+  -webkit-scroll-behavior: smooth
 }
 
 ul,
@@ -167,7 +167,7 @@ input[type="reset"] {
   align-self: center;
   margin-right: 15px;
   border-radius: 5px;
-  width:20rem;
+  width: 20rem;
   outline: none;
   border: 1px solid #000;
   padding: 3px 12px;
@@ -244,23 +244,6 @@ input[type="reset"] {
   display: none;
 }
 
-main .swiper-button-prev {
-  /* color:  rgba(255,255,255,.8); */
-  /* width: 42px;
-  left: 0px;
-  height: 94%;
-  top: 22px !important;
-  background-color: rgba(255, 255, 255, 0.2); */
-}
-
-main .swiper-button-next {
-  /* color:  rgba(255,255,255,.8); */
-  /* width: 42px;
- right: 0px;
-  height: 94%;
-  top: 22px !important;
-  background-color: rgba(255, 255, 255, 0.2); */
-}
 
 .tv-serise {
   padding: 20px 40px;
@@ -448,9 +431,7 @@ a:hover {
   width: 27px;
   height: 25px;
   border-radius: 20px;
-
   color: #fff;
-  /* top: 4px; */
   top: 52px;
   left: 23px;
   z-index: 2;
@@ -470,7 +451,6 @@ a:hover {
   background: #000;
   border-radius: 3px 3px 0 0;
   overflow: hidden;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -488,7 +468,6 @@ a:hover {
 
 .swiper-slide img {
   display: block;
-  /* max-width: 253px; */
   object-fit: cover;
   position: relative;
   top: 0px;
@@ -507,7 +486,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  transform: translateY(-52px);
+  transform: translateY(-65px);
   padding: 0 5px;
 }
 
@@ -551,8 +530,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, .2);
-  /* z-index: 200000;
-  position: relative; */
   pointer-events: none;
 }
 
@@ -564,7 +541,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   100% {
     background-color: hsl(0, 0%, 40%);
   }
-
 }
 
 .star-rate,
@@ -582,7 +558,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
 }
 
 .bad-rate {
-
   color: #d83e3e
 }
 
@@ -620,7 +595,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
 .form-box {
   display: flex;
   justify-content: end;
-  /* background: rgba(19, 58, 172, 0.4); */
   background-color: rgba(167, 28, 28, 0.55);
   height: 45px;
   position: relative;
@@ -634,7 +608,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   top: 0;
   right: 40px;
 }
-
 
 .dis {
   pointer-events: none;
@@ -688,14 +661,17 @@ footer {
 
 .footer-content-conteiner .content-holder:first-child {
   margin: 10px 0 15px 0;
- 
+
 }
+
 .footer-content-conteiner .content-holder:first-child li {
   padding: .6rem .65rem;
   border-radius: 50%
 }
+
 .footer-content-conteiner .content-holder:first-child li:hover {
-  background: rgb(31, 31, 31); ;
+  background: rgb(31, 31, 31);
+  ;
 }
 
 .tmdb-logo {
@@ -793,16 +769,22 @@ footer {
   color: #ffffff8a;
   font-size: 0.9rem;
 }
-.clean-input{
+
+.clean-input {
   position: absolute;
   right: 75px;
   align-self: center;
-transition: all .2s linear;
+  transition: all .2s linear;
   visibility: hidden;
-
 }
-.line-inp{
-  width: 1px; height: 17px; background-color: #747474; position: absolute; right: 63px; top: 14px;
+
+.line-inp {
+  width: 1px;
+  height: 17px;
+  background-color: #747474;
+  position: absolute;
+  right: 63px;
+  top: 14px;
 }
 
 
@@ -816,9 +798,7 @@ transition: all .2s linear;
     font-size: 1rem;
   }
 
-  .conteiner-movie div {
-   
-  }
+  .conteiner-movie div {}
 
   .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -831,7 +811,7 @@ transition: all .2s linear;
   .netflixOriginals h2,
   .movies__header h2 {
     font-size: 1rem !important
-      }
+  }
 
   .content-holder ul li {
     font-size: .9rem;
@@ -844,16 +824,17 @@ transition: all .2s linear;
 
   #search-id {
     justify-content: center !important;
-
   }
-  .featured h2{
-  font-size: 2rem !important;
-}
+
+  .featured h2 {
+    font-size: 2rem !important;
+  }
+
   #search-box {
     width: 17.5rem;
- 
+
   }
-  
+
   .form-box button {
     right: 65px;
     top: 0px;
@@ -873,13 +854,12 @@ transition: all .2s linear;
   .original__movies {
     padding: 15px 17px !important;
     overflow: visible;
-
   }
 
   .main-movies-coneiner .movie-content .title-movie {
     font-size: .7rem !important;
-    transform: translateY(-48px) ;
-    min-height: 48px  !important;
+    transform: translateY(-48px);
+    min-height: 48px !important;
     border-radius: 3px 3px 0px 0;
     background-color: rgb(41, 41, 41);
   }
@@ -889,8 +869,6 @@ transition: all .2s linear;
     z-index: 50;
     width: 100%;
   }
-
- 
 
   .swiper-pagination-bullet {
     pointer-events: none;
@@ -907,8 +885,8 @@ transition: all .2s linear;
   .main-movies-coneiner #page-load {
     margin: 0px 5px;
     font-size: 1rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
   }
 
   .main-movies-coneiner .btn-container a {
@@ -924,7 +902,6 @@ transition: all .2s linear;
   .btn-container {
     justify-content: space-evenly;
     padding: 0 5px;
-
   }
 
   .header-container {
@@ -936,7 +913,7 @@ transition: all .2s linear;
   }
 
   .navbar a {
-    font-size: 0.8rem !important  ;
+    font-size: 0.8rem !important;
   }
 
   .a-container {
@@ -957,9 +934,7 @@ transition: all .2s linear;
   }
 
   h2 {
-    font-size: 1.1rem 
-    /* padding: 0 25px !important;
-    margin: 5px 0 5px 0 !important; */
+    font-size: 1.1rem
   }
 
   .padding-top30 {
@@ -973,7 +948,7 @@ transition: all .2s linear;
   }
 
   .title-movie {
-    transform: translateY(-44px) !important;
+    transform: translateY(-48px) !important;
     max-height: 45px;
     border-radius: 3px 3px 0px 0;
     background-color: rgb(41, 41, 41);
@@ -989,6 +964,7 @@ transition: all .2s linear;
     font-size: 0.6rem !important;
     line-height: 1.2 !important;
   }
+
   .movie-content .fa-solid,
   .movie-content .fa-star,
   .movie-content .star-rate {
@@ -996,6 +972,7 @@ transition: all .2s linear;
     font-size: 0.6rem !important;
     top: 12px !important;
   }
+
   .tp .swiper-slide.movie-content .imdb-rate {
     position: absolute;
     border-radius: 20px;
@@ -1005,7 +982,7 @@ transition: all .2s linear;
     top: auto;
     left: auto;
     z-index: 2;
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     text-shadow: 0px 0px 25px;
     text-align: center;
     display: flex;
@@ -1013,7 +990,7 @@ transition: all .2s linear;
     width: 30px;
     opacity: unset;
     visibility: unset;
-    line-height: 3.3 !important;
+    line-height: 3 !important;
   }
 
   .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -1039,6 +1016,7 @@ transition: all .2s linear;
   .select-movies a {
     font-size: 0.8rem !important;
   }
+
   .select-movies-container {
     display: flex;
     align-items: baseline !important;
@@ -1079,17 +1057,18 @@ transition: all .2s linear;
   }
 
   .select-movies .select-btn-slider button {
-    padding: 3px 13px ;
-    font-size: 0.7rem 
+    padding: 3px 13px;
+    font-size: 0.7rem
   }
 
   .main-movies-coneiner .overview {
-    font-size: 0.8rem !important ;
-z-index: 51;
+    font-size: 0.8rem !important;
+    z-index: 51;
     max-height: 173px !important;
     max-width: 145px !important;
     padding: 0 4px !important;
   }
+
   .overview {
     font-size: 12px !important;
     max-height: 165px !important;
@@ -1120,20 +1099,26 @@ z-index: 51;
     background: rgba(255, 255, 255, .2);
     pointer-events: none;
     height: 28px !important;
-  }  
+  }
+
   .swiper-slide:hover .title-movie {
-    transform: translateY(-44px) !important ;
+    transform: translateY(-45px) !important;
+  }
+  .swiper-slide .title-movie{
+    transform: translateY(-45px) !important
   }
   .conteiner-movie .swiper-slide:hover .title-movie {
-    transform: translateY(-44px) !important ;
+    transform: translateY(-48px) !important;
   }
-
+ 
+  .conteiner-movie .swiper-slide .title-movie {
+    transform: translateY(-48px) !important;
+  }
+ 
 }
 
-
-
 @media screen and (max-width: 1080px) {
-  
+
   main .swiper-button-prev::after {
     font-size: 1.3rem;
   }
@@ -1141,9 +1126,11 @@ z-index: 51;
   main .swiper-button-next::after {
     font-size: 1.3rem;
   }
-  .featured h2{
-    font-size: 2.2rem 
+
+  .featured h2 {
+    font-size: 2.2rem
   }
+
   .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
@@ -1152,18 +1139,18 @@ z-index: 51;
     position: relative;
   }
 
-  /* .main-movies-coneiner .movie-content .title-movie */
-
   .swiper-slide:hover .title-movie {
-    transform: translateY(-44px)  ;
+    transform: translateY(-44px);
   }
 
-  .conteiner-movie .swiper-slide:hover .title-movie{
-    transform: translateY(-48px) 
+  .conteiner-movie .swiper-slide:hover .title-movie {
+    transform: translateY(-48px)
+    
   }
+
   .content-holder ul li {
     font-size: .9rem;
-    margin: 0 10px ;
+    margin: 0 10px;
   }
 
   .content-holder {
@@ -1214,8 +1201,8 @@ z-index: 51;
     width: 100%;
   }
 
-  .conteiner-movie div  {
-    font-size: 1rem  ;
+  .conteiner-movie div {
+    font-size: 1rem;
   }
 
   .swiper-pagination-bullet {
@@ -1233,8 +1220,8 @@ z-index: 51;
   .main-movies-coneiner #page-load {
     margin: 0px 5px;
     font-size: 1rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.7rem;
+    height: 3.7rem;
   }
 
   .main-movies-coneiner .btn-container a {
@@ -1250,7 +1237,6 @@ z-index: 51;
   .btn-container {
     justify-content: center;
     padding: 0 5px;
-
   }
 
   .header-container {
@@ -1264,34 +1250,39 @@ z-index: 51;
   .navbar a {
     font-size: 0.9rem;
   }
+
   .a-container {
     padding: 0;
     gap: 20px;
   }
+
   .netflix-icons {
     width: 34px;
     margin-left: 10px;
     display: none;
   }
+
   .netflix-icons a {
     background-size: 29px, 29px;
     width: 29px;
     height: 29px;
   }
+
   .netflixOriginals h2,
   .movies__header h2 {
     font-size: 1.2rem
-      /* padding: 0 25px !important;
-    margin: 5px 0 5px 0 !important; */
   }
+
   .padding-top30 {
     padding-top: 45px;
     position: relative;
   }
+
   .swiper-slide {
     margin: 45px 0 0 0;
     overflow: visible;
   }
+
   .title-movie {
     transform: translateY(-44px);
     max-height: 40px;
@@ -1300,6 +1291,7 @@ z-index: 51;
     padding: 0 3px;
     font-size: 12px;
   }
+
   .swiper .fa-solid,
   .swiper .fa-star,
   .swiper .star-rate {
@@ -1334,7 +1326,7 @@ z-index: 51;
     width: 30px;
     opacity: unset;
     visibility: unset;
-    line-height: 3
+    line-height: 3.3
   }
 
   .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -1358,13 +1350,14 @@ z-index: 51;
   }
 
   .select-movies a {
-    font-size:1rem ;
+    font-size: 1rem;
   }
 
   .select-movies-container {
     display: flex;
     align-items: baseline;
-    justify-content:unset; ;
+    justify-content: unset;
+    ;
   }
 
   .featured .featured__buttons button {
@@ -1395,6 +1388,7 @@ z-index: 51;
   #Most-popular-TV-Series {
     padding: 20px 0 0 0;
   }
+
   .overview {
     font-size: 0.9rem;
     max-height: 173px;
@@ -1411,16 +1405,18 @@ z-index: 51;
     position: relative;
     height: 30px;
   }
-  .main-movies-coneiner .overview {
-    font-size: 0.9rem;   max-height: 178px;   margin-top: 0;   max-width: 186px;   padding: 0 5px;   z-index: 51; 
-  }
-  
 
-  .select-movies-container-div {}
+  .main-movies-coneiner .overview {
+    font-size: 0.9rem;
+    max-height: 178px;
+    margin-top: 0;
+    max-width: 186px;
+    padding: 0 5px;
+    z-index: 51;
+  }
 
   .select-movies .select-btn-slider button {
     padding: 2px 13px;
     font-size: 0.8rem;
   }
- 
 }
