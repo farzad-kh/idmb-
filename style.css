@@ -977,7 +977,7 @@ transition: all .2s linear;
     max-height: 45px;
     border-radius: 3px 3px 0px 0;
     background-color: rgb(41, 41, 41);
-    padding: 0 2px;
+    padding: 0 3px;
     font-size: 12px !important;
   }
 
@@ -1297,7 +1297,7 @@ z-index: 51;
     max-height: 40px;
     border-radius: 3px 3px 0px 0;
     background-color: rgb(41, 41, 41);
-    padding: 0 2px;
+    padding: 0 3px;
     font-size: 12px;
   }
   .swiper .fa-solid,
