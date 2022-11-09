@@ -799,8 +799,14 @@ footer {
     font-size: 1rem;
   }
 
-  .conteiner-movie div {}
-
+  main .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 0;
+left: auto;
+  }
+  main .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 0;
+right: auto;
+  }
   .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
@@ -939,7 +945,7 @@ footer {
   }
 
   .padding-top30 {
-    padding-top: 10px !important;
+    padding-top: 22px !important;
     position: relative;
   }
 
