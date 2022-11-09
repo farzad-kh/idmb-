@@ -800,11 +800,11 @@ footer {
   }
 
   main .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    right: 0;
+    right: -3px;
 left: auto;
   }
   main .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: 0;
+    left: -3px;
 right: auto;
   }
   .swiper-horizontal>.swiper-pagination-bullets,
