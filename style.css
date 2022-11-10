@@ -1072,7 +1072,7 @@ right: auto;
   .main-movies-coneiner .overview {
     font-size: .77rem !important;
     z-index: 51;
-    max-height: 205px !important;
+    max-height: 200px !important;
     max-width: 145px !important;
     padding: 0 4px !important;
   }
