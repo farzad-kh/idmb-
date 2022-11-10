@@ -998,7 +998,7 @@ right: auto;
     width: 30px;
     opacity: unset;
     visibility: unset;
-    line-height: 2.8 !important;
+    line-height: 2 !important;
   }
 
   .swiper-pagination-clickable .swiper-pagination-bullet {
