@@ -98,11 +98,11 @@ const showMovies = (movies, dom_element, posterPath, name1, releaseDate, overvie
 }
 const starRateAvg = (movie, starRate) => {
     if (movie['vote_average'] <= 4) {
-        starRate.classList.add("fa-solid", "fa-star", "bad-rate")
+        starRate.classList.add("fa","fa-solid", "fa-star", "bad-rate")
     } else if (movie['vote_average'] <= 7) {
-        starRate.classList.add("fa-solid", "fa-star", "mid-rate")
+        starRate.classList.add("fa","fa-solid", "fa-star", "mid-rate")
     } else {
-        starRate.classList.add("fa-solid", "fa-star", "star-rate")
+        starRate.classList.add("fa","fa-solid", "fa-star", "star-rate")
     }
 }
 const getMostPopular = async () => {
