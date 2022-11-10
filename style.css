@@ -566,7 +566,7 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   position: absolute;
   font-size: 1rem;
   z-index: 2;
-  max-height: 215px;
+  max-height: 240px;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 215px;
