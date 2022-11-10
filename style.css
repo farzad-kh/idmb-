@@ -147,7 +147,7 @@ input[type="reset"] {
 }
 
 .netflix-icons a {
-  background-image: url(/image/netflix.png);
+  background-image: url(/icon/netflix.png);
   background-size: 40px, 40px;
   width: 43px;
   height: 40px;
@@ -930,6 +930,8 @@ right: auto;
   .a-container {
     padding: 0;
     gap: 20px;
+    
+    
   }
 
   .netflix-icons {
@@ -1270,6 +1272,7 @@ right: auto;
   .a-container {
     padding: 0;
     gap: 20px;
+    height: 3.3em;
   }
 
   .netflix-icons {
