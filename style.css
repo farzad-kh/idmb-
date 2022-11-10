@@ -429,8 +429,8 @@ a:hover {
 
 .imdb-rate {
   position: absolute;
-  width: 27px;
-  height: 25px;
+  width: 24px;
+  height: 22px;
   border-radius: 20px;
   color: #fff;
   top: 52px;
@@ -439,7 +439,10 @@ a:hover {
   font-size: 1rem;
   opacity: 0;
   visibility: hidden;
-  text-shadow: 0px 0px 25px
+ 
+}
+.imdb-rate i{
+  font-size: .95rem;
 }
 
 .main-movies-coneiner .movie-content.swiper-slide {
@@ -550,7 +553,7 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   position: absolute;
   top: 5px;
   left: -21px;
-  font-size: .9rem;
+  font-size: .95rem ;
   color: #ffc10a
 }
 
@@ -564,9 +567,9 @@ main .swiper-horizontal>.swiper-pagination-bullets,
 
 .overview {
   position: absolute;
-  font-size: 1rem;
+  font-size: .95rem;
   z-index: 2;
-  max-height: 240px;
+  max-height: 230px;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 215px;
@@ -817,7 +820,7 @@ right: auto;
 
   .netflixOriginals h2,
   .movies__header h2 {
-    font-size: 1rem !important
+    font-size: 1.1rem !important
   }
 
   .content-holder ul li {
@@ -1406,7 +1409,7 @@ right: auto;
 
   .overview {
     font-size: .82rem;
-    max-height: 205px;
+    max-height: 198px;
     margin-top: 0;
     max-width: 200px;
     padding: 0 5px;
@@ -1423,7 +1426,7 @@ right: auto;
 
   .main-movies-coneiner .overview {
     font-size: .82rem;
-    max-height: 205px;
+    max-height: 198px;
     margin-top: 0;
     max-width: 200px;
     padding: 0 5px;
