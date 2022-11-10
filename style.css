@@ -1147,18 +1147,15 @@ right: auto;
     position: relative;
   }
 
-  .swiper-slide:hover .title-movie {
+  .swiper-slide:active .title-movie {
     transform: translateY(-44px);
   }
 
-  .conteiner-movie .swiper-slide:hover .title-movie {
+  .conteiner-movie .swiper-slide:active .title-movie {
     transform: translateY(-48px)
     
   }
   
-.swiper-slide:active .title-movie {
-  transform: translateY(0);
-}
 
 .swiper-slide:active img {
   opacity: .6;
