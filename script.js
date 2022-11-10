@@ -60,6 +60,7 @@ const fetchMovies = async (url, domelement, poster, name1, releaseDate, overview
             } else {
                 conteinerMovie.innerHTML = `<div style="font-size: 1.3rem;color:#fff"> No results found for <span style="color:#ce2f2f">${searchBox.value}</span> 🙄</div>`
                 mainMoviesConeiner.style.minHeight = "auto"
+                alert("خیلی خری")
             }
         })
         .catch(error => {
