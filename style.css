@@ -1155,6 +1155,33 @@ right: auto;
     transform: translateY(-48px)
     
   }
+  
+.swiper-slide:active .title-movie {
+  transform: translateY(0);
+}
+
+.swiper-slide:active img {
+  opacity: .6;
+  filter: blur(.4px);
+}
+
+.swiper-slide:active .imdb-rate {
+  opacity: unset;
+  visibility: visible;
+  transition-delay: 50ms;
+}
+
+.swiper-slide:active .overview {
+  opacity: unset;
+  visibility: unset;
+  transition-delay: 50ms;
+}
+
+.swiper-slide:active .like-btn {
+  opacity: 1;
+  visibility: unset;
+}
+
 
   .content-holder ul li {
     font-size: .9rem;
