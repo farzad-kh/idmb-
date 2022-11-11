@@ -18,7 +18,6 @@ const btnContainer = document.querySelector(".btn-container")
 const onTV = document.querySelectorAll(".on-tv")
 const load = document.querySelector(".swiper-container")
 const CleanInput = document.querySelector(".clean_input")
-
 const swiperOne = document.querySelector("#swiper1")
 const selectMovies = document.querySelector(".select-movies")
 const btnTt = selectMovies.getElementsByTagName("a")
@@ -26,12 +25,11 @@ const mainMoviesConeiner = document.querySelector(".main-movie-conent")
 
 let curentpage = 1
 let valBtn = Number(nextBtn.value)
-
 let PopularTv = "popular"
 
 searchBox.value = ""
 
-let todoS
+
 window.onload = () => {
     getMostPopular()
     getTrendingNow()
@@ -98,11 +96,11 @@ const showMovies = (movies, dom_element, posterPath, name1, releaseDate, overvie
 }
 const starRateAvg = (movie, starRate) => {
     if (movie['vote_average'] <= 4) {
-        starRate.classList.add("fa","fa-solid", "fa-star", "bad-rate")
+        starRate.classList.add("fa", "fa-solid", "fa-star", "bad-rate")
     } else if (movie['vote_average'] <= 7) {
-        starRate.classList.add("fa","fa-solid", "fa-star", "mid-rate")
+        starRate.classList.add("fa", "fa-solid", "fa-star", "mid-rate")
     } else {
-        starRate.classList.add("fa","fa-solid", "fa-star", "star-rate")
+        starRate.classList.add("fa", "fa-solid", "fa-star", "star-rate")
     }
 }
 const getMostPopular = async () => {
@@ -151,43 +149,37 @@ formBox.onsubmit = async (e) => {
     if (val !== "") {
         conteinerMovie.innerHTML = ""
         getSerch()
-       
         btnContainer.style.display = "none"
     }
-   
-    searchBox.onkeyup = () => {        
+
+    searchBox.onkeyup = () => {
         if (searchBox.value == "") {
-            getPopular()
             conteinerMovie.innerHTML = ""
+            getPopular()
             btnContainer.style.display = "flex"
-            CleanInput.style.display="none"
-        }else{
-            CleanInput.style.display="block"
+            CleanInput.style.display = "none"
+        } else {
+            CleanInput.style.display = "block"
         }
-    }    
-}
-searchBox.onkeyup=()=>{
-    if (searchBox.value=="") {
-        CleanInput.style.display="none"
-    }else{
-        CleanInput.style.display="block"
     }
-    
-    console.log(searchBox.value);
+}
+searchBox.onkeyup = () => {
+    if (searchBox.value == "") {
+        CleanInput.style.display = "none"
+    } else {
+        CleanInput.style.display = "block"
+    }
 }
 
-CleanInput.onclick=()=>{
-    searchBox.value=""
+CleanInput.onclick = () => {
+    searchBox.value = ""
     conteinerMovie.innerHTML = ""
-        setTimeout(getPopular,200)
-
-    if (searchBox.value==""){
-        CleanInput.style.display="none"
-    }else{
-        CleanInput.style.display="block"
+    setTimeout(getPopular, 200)
+    if (searchBox.value == "") {
+        CleanInput.style.display = "none"
+    } else {
+        CleanInput.style.display = "block"
     }
-   
-   
     btnContainer.style.display = "flex"
 }
 
