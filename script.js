@@ -17,7 +17,7 @@ const pageLoad = document.querySelector("#page-load")
 const btnContainer = document.querySelector(".btn-container")
 const onTV = document.querySelectorAll(".on-tv")
 const load = document.querySelector(".swiper-container")
-let CleanInput = document.querySelector(".clean-input")
+const CleanInput = document.querySelector(".clean_input")
 
 const swiperOne = document.querySelector("#swiper1")
 const selectMovies = document.querySelector(".select-movies")
@@ -151,17 +151,44 @@ formBox.onsubmit = async (e) => {
     if (val !== "") {
         conteinerMovie.innerHTML = ""
         getSerch()
-
+       
         btnContainer.style.display = "none"
     }
-
-    searchBox.onkeyup = () => {
+   
+    searchBox.onkeyup = () => {        
         if (searchBox.value == "") {
             getPopular()
             conteinerMovie.innerHTML = ""
             btnContainer.style.display = "flex"
+            CleanInput.style.display="none"
+        }else{
+            CleanInput.style.display="block"
         }
+    }    
+}
+searchBox.onkeyup=()=>{
+    if (searchBox.value=="") {
+        CleanInput.style.display="none"
+    }else{
+        CleanInput.style.display="block"
     }
+    
+    console.log(searchBox.value);
+}
+
+CleanInput.onclick=()=>{
+    searchBox.value=""
+    conteinerMovie.innerHTML = ""
+        setTimeout(getPopular,200)
+
+    if (searchBox.value==""){
+        CleanInput.style.display="none"
+    }else{
+        CleanInput.style.display="block"
+    }
+   
+   
+    btnContainer.style.display = "flex"
 }
 
 const pageBtns = () => {

@@ -596,21 +596,53 @@ main .swiper-horizontal>.swiper-pagination-bullets,
 }
 
 
-.form-box {
+
+.SearchInput {
   display: flex;
   justify-content: end;
+
   background-color: rgba(167, 28, 28, 0.55);
   height: 45px;
   position: relative;
   margin-bottom: 20px;
 }
 
-.form-box button {
-  position: relative;
+.form-box {
+  display: flex;
+  height: inherit;
+}
+
+.clean_input_container {
+  width: 2.7rem;
+  position: absolute;
+  height: inherit;
+  display: flex;
+  right: 30px;
+  align-items: center;
+}
+.clean_input_container::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40%;
+  background-color: #393c3e;
+  left: 20px;
+
+}
+.clean_input_container button {
+  position: absolute;
   font-size: 0.9rem;
-  color: #e7e7e7;
-  top: 0;
-  right: 40px;
+  color: #e5e5e5;
+  right: 0;
+}
+
+.clean_input {
+  color: #e5e5e5;
+  display: none;
+  cursor: pointer;
+}
+.form-box {
+  position: absolute;
 }
 
 .dis {
@@ -833,7 +865,7 @@ right: auto;
     margin: 3px 0;
   }
 
-  #search-id {
+  .SearchInput {
     justify-content: center !important;
   }
 
@@ -846,11 +878,6 @@ right: auto;
 
   }
 
-  .form-box button {
-    right: 65px;
-    top: 0px;
-    position: relative;
-  }
 
   .swiper-slide img {
     object-fit: fill;
@@ -1175,7 +1202,7 @@ right: auto;
     margin: 3px 0;
   }
 
-  #search-id {
+  .SearchInput {
     justify-content: end
   }
 
@@ -1183,11 +1210,7 @@ right: auto;
     width: 17.5rem;
   }
 
-  .form-box button {
-    right: 45px;
-    top: 0px;
-    position: relative;
-  }
+
 
   .swiper-slide img {
     object-fit: fill;
