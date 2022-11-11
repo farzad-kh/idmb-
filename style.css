@@ -494,30 +494,25 @@ a:hover {
   padding: 0 5px;
 }
 
-.swiper-slide:hover .title-movie {
+.swiper-slide:hover .title-movie,.swiper-slide:active .title-movie {
   transform: translateY(0);
 }
 
-.swiper-slide:hover img {
+.swiper-slide:hover img,.swiper-slide:active img {
   opacity: .6;
   filter: blur(.4px);
 }
 
-.swiper-slide:hover .imdb-rate {
+.swiper-slide:hover .imdb-rate,.swiper-slide:active .imdb-rate {
   opacity: unset;
   visibility: visible;
   transition-delay: 50ms;
 }
 
-.swiper-slide:hover .overview {
+.swiper-slide:hover .overview, .swiper-slide:active .overview{
   opacity: unset;
   visibility: unset;
   transition-delay: 50ms;
-}
-
-.swiper-slide:hover .like-btn {
-  opacity: 1;
-  visibility: unset;
 }
 
 .skeleton {
