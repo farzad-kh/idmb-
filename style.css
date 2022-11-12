@@ -605,6 +605,7 @@ main .swiper-horizontal>.swiper-pagination-bullets,
 .form-box {
   display: flex;
   height: inherit;
+  position: absolute;
 }
 
 .clean_input_container {
@@ -635,9 +636,6 @@ main .swiper-horizontal>.swiper-pagination-bullets,
   color: #e5e5e5;
   display: none;
   cursor: pointer;
-}
-.form-box {
-  position: absolute;
 }
 
 .dis {
@@ -1219,7 +1217,7 @@ right: auto;
   }
 
   .SearchInput {
-    justify-content: end
+    justify-content: flex-end
   }
 
   #search-box {
