@@ -842,7 +842,9 @@ right: auto;
     width: 160px;
     position: relative;
   }
-
+  .conteiner-movie{
+    gap: 25px ;
+  }
   .netflixOriginals h2,
   .movies__header h2 {
     font-size: 1.1rem !important
@@ -1152,7 +1154,7 @@ right: auto;
     pointer-events: none;
     height: 28px !important;
   }
-
+ 
   .swiper-slide:hover .title-movie {
     transform: translateY(-45px) !important;
   }
