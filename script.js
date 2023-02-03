@@ -136,9 +136,9 @@ const getTopRated = () => {
 }
 const getPopular = () => {
     let url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=${curentpage}`
-    setTimeout(()=>loadingAnime.style.opacity=0,2450)
+    setTimeout(()=>loadingAnime.style.opacity=0,2650)
 
-    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
+    setTimeout(()=>conteinerMovie.style.opacity=1,2800)
     setTimeout(()=> fetchMovies(url, '.conteiner-movie', 'poster_path', "title", "release_date", "overview", "vote_average"),100)
   
    
@@ -149,8 +149,8 @@ const getSerch = () => {
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=1&include_adult=false&query=${val}`
     loadingAnime.style.opacity=1
     conteinerMovie.style.opacity=0
-    setTimeout(()=>loadingAnime.style.opacity=0,2450)
-    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
+    setTimeout(()=>loadingAnime.style.opacity=0,2650)
+    setTimeout(()=>conteinerMovie.style.opacity=1,2800)
   
     fetchMovies(url, '.conteiner-movie', 'poster_path', "title", "release_date", "overview", "vote_average")
    
@@ -158,7 +158,7 @@ const getSerch = () => {
 
 formBox.onsubmit = async (e) => {
 
-    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
+    setTimeout(()=>conteinerMovie.style.opacity=1,2800)
     e.preventDefault()
     val = searchBox.value
     if (val !== "") {
