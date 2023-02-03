@@ -1211,7 +1211,7 @@ footer {
   .main-movies-coneiner .overview {
     font-size: .77rem !important;
     z-index: 51;
-    max-height: 200px !important;
+    max-height: 24vh !important;
     max-width: 145px !important;
     padding: 0 4px !important;
   }
