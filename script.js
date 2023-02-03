@@ -22,7 +22,7 @@ const swiperOne = document.querySelector("#swiper1")
 const selectMovies = document.querySelector(".select-movies")
 const btnTt = selectMovies.getElementsByTagName("a")
 const mainMoviesConeiner = document.querySelector(".main-movie-conent")
-
+const loadingAnime=document.querySelector(".loading")
 let curentpage = 1
 let valBtn = Number(nextBtn.value)
 let PopularTv = "popular"
@@ -36,6 +36,8 @@ window.onload = () => {
     getTopRated()
     getSerch()
     getPopular()
+    loadingAnime.style.opacity=1
+  
 }
 window.addEventListener("scroll", function () {
 
@@ -134,16 +136,29 @@ const getTopRated = () => {
 }
 const getPopular = () => {
     let url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=${curentpage}`
-    fetchMovies(url, '.conteiner-movie', 'poster_path', "title", "release_date", "overview", "vote_average")
+    setTimeout(()=>loadingAnime.style.opacity=0,2450)
+
+    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
+    setTimeout(()=> fetchMovies(url, '.conteiner-movie', 'poster_path', "title", "release_date", "overview", "vote_average"),100)
+  
+   
     pageBtns()
 }
 
 const getSerch = () => {
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=1&include_adult=false&query=${val}`
+    loadingAnime.style.opacity=1
+    conteinerMovie.style.opacity=0
+    setTimeout(()=>loadingAnime.style.opacity=0,2450)
+    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
+  
     fetchMovies(url, '.conteiner-movie', 'poster_path', "title", "release_date", "overview", "vote_average")
+   
 }
 
 formBox.onsubmit = async (e) => {
+
+    setTimeout(()=>conteinerMovie.style.opacity=1,2600)
     e.preventDefault()
     val = searchBox.value
     if (val !== "") {
@@ -172,9 +187,10 @@ searchBox.onkeyup = () => {
 }
 
 CleanInput.onclick = () => {
+    conteinerMovie.style.opacity=0
     searchBox.value = ""
     conteinerMovie.innerHTML = ""
-    setTimeout(getPopular, 200)
+    setTimeout(getPopular, 100)
     if (searchBox.value == "") {
         CleanInput.style.display = "none"
     } else {
@@ -184,6 +200,8 @@ CleanInput.onclick = () => {
 }
 
 const pageBtns = () => {
+    conteinerMovie.style.opacity=0
+    loadingAnime.style.opacity=1
     nextBtn.onclick = () => {
         valBtn += 1
         curentpage = valBtn
